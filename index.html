@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/static/NotoSans-Bold.ttf " />
+    <link rel="stylesheet" href="./assets/fonts/static/NotoSans-Medium.ttf " />
+    <link rel="stylesheet" href="./assets/fonts/static/NotoSans-Regular.ttf " />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    
+                    <img src="./assets/images/logo.svg" alt="Extensions Logo" class="me-3 extensions-logo">
+                </div>
+                <div>
+                    <!-- Theme Toggle Button -->
+                    <button class="theme-toggle-btn" id="themeToggleButton">
+                        <img id="themeIcon" src="./assets/images/icon-moon.svg" alt="Theme" width="20" height="20">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2><span class="extensions-text">Extensions</span> List</h2>
+            <div class="right-aligned-div">
+                <div class="d-flex filter-buttons">
+                    <button class="btn btn-primary">All</button>
+                    <button class="btn btn-outline-primary">Active</button>
+                    <button class="btn btn-outline-primary">Inactive</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="extensions-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Extension Cards will be dynamically added here -->
+        </div>
+    </main>
+
+    <!-- Confirmation Modal -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Confirm Removal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to remove <span id="extensionNameToRemove"></span>?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" id="confirmRemoveButton">Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-3">
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/AhmadShallal">Ahmad K. Shallal</a>.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (optional, but required for some components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
