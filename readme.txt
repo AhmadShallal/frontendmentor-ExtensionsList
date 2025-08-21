@@ -1,7 +1,6 @@
 
 # Browser Extensions Manager UI
 
-![Design preview for the Browser extensions manager UI coding challenge](./preview.jpg)
 
 ## Overview
 
@@ -88,6 +87,6 @@ browser-extensions-manager-ui/
 
 ## Author
 
--   [Your Name] - [Your GitHub Profile](https://github.com/yourusername)
+-  (https://github.com/AhmadShallal)
 
 ```
